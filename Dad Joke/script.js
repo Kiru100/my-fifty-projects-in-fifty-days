@@ -31,5 +31,4 @@ async function generateJoke(){
 //         jokeElement.innerHTML = data.joke
 //     })
 // }
-
 jokeButton.addEventListener('click',generateJoke)
