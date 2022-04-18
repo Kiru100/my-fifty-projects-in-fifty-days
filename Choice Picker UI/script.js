@@ -8,6 +8,15 @@ textarea.addEventListener('keyup', (e) =>{
 })
 
 function createTags(outhere){
-    const tags = outhere.split(',')
+    const tags = outhere.split(',').filter(tag => tag.trim() !=='').map(tag => tag.trim())
+    
+    tagsElement.innerHTML = ''
+
+    tags.forEach(tag => {
+        const tagElement=document.createElement('span')
+        tagElement.classList.add('tag')
+        tagElement.innerText=tag
+        tagsElement.appendChild(tagElement)
+    })
 
 }
