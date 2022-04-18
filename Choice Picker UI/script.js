@@ -8,5 +8,6 @@ textarea.addEventListener('keyup', (e) =>{
 })
 
 function createTags(outhere){
-console.log(outhere)
+    const tags = outhere.split(',')
+
 }
