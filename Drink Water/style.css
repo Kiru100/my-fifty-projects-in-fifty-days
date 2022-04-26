@@ -2,6 +2,7 @@
 
 :root{
   --border-color:#144fc6;
+  --fill-color:#6ab3f8;
 }
 
 * {
@@ -41,6 +42,11 @@ h3{
   overflow: hidden;
 }
 
+.cup.cup-small.full{
+  background-color: var(--fill-color);
+  color:#ade8f4;
+}
+
 .cup.cup-small{
   width: 50px;
   height: 95px;
@@ -53,4 +59,48 @@ h3{
   text-align: center;
   margin: 5px;
   transition: 0.3s ease;
+}
+
+.cups{
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  align-items: center;
+  justify-content: center;
+}
+
+.remained{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  flex: 1;
+  transition: 0.3s ease;
+
+}
+
+.remained span{
+  font-size: 20px;
+  font-weight:bold;
+}
+
+.remained small{
+  font-size: 12px;
+}
+
+.percentage {
+  background-color: var(--fill-color);
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  height: 0;
+  transition: 0.3s ease;
+}
+
+.text{
+  text-align: center;
+  margin: 0 0 5px;
 }
