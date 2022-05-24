@@ -7,7 +7,7 @@ const rightBtn = document.getElementById('right')
 
 let activeSlide = 0
 
-rightBtn.addEventListener('click', ()=>{
+rightBtn.addEventListener('click', () => {
     activeSlide++
     if(activeSlide>slides.length - 1){
         activeSlide=0
@@ -17,7 +17,7 @@ rightBtn.addEventListener('click', ()=>{
 })
 
 
-leftBtn.addEventListener('click', ()=>{
+leftBtn.addEventListener('click', () => {
     activeSlide--
 
     if(activeSlide<0){
