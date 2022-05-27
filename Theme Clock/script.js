@@ -23,6 +23,7 @@ function setTime(){
     const time = new Date();
     const month= time.getMonth()
     const day = time.getDay()
+    const date = time.getDate()
     const hours= time.getHours()
     const hoursForClock=hours % 12
     const minutes = time.getMinutes()
@@ -36,7 +37,7 @@ function setTime(){
 
     timeElement.innerHTML = `${hoursForClock}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds<10 ? `0${seconds}`:seconds} ${ampm}`
     
-    dateElement.innerHTML=`${days[day]}, ${months[month]}<span class="circle"> ${day}</span>`
+    dateElement.innerHTML=`${days[day]}, ${months[month]} <span class="circle"> ${date}</span>`
 }
 
 function scale (number, inMin, inMax, outMin, outMax) {
