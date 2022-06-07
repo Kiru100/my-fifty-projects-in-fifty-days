@@ -13,14 +13,11 @@ function labasnotif (){
 
     notif.innerText=getRandomNumber();
 
-
-
     toasts.appendChild(notif)
 
     setTimeout(()=>{
         notif.remove()
-    },3000)
-
+    }, 3000)
   
 }
 
