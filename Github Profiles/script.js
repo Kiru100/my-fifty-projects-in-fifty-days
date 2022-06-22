@@ -52,6 +52,7 @@ function createErrorCard(message){
     main.innerHTML = cardHTML;
 }
 
+aync function getRepos()
 
 form.addEventListener('submit', (event) =>{
     event.preventDefault()
