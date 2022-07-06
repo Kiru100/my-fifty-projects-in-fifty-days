@@ -20,9 +20,7 @@ function getRandomNumber(){
 
 function getRandomSymbol(){
     const symbols = '!@#$%^&*(){}[]=<>/,.'
-
     const number = Math.floor(Math.random() * symbols.length)
-
     return symbols[number];
 }
 
