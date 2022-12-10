@@ -21,15 +21,22 @@ function runAnimation(){
         const nextToLast = nums.length - 1;
 
         num.addEventListener('animationend', (e)=>{
-            if(e.animationName === 'goIn' && index !== nextToLast){
+            if(e.animationName === 'inside' && index !== nextToLast){
                 num.classList.remove('in');
                 num.classList.add('out');
-            }else if(e.animationName === 'goOut' && num.nextElementSibling){
-                num.nextElementSibling.classList('in');
-            }else{
+            }
+            else if(e.animationName === 'outside' && num.nextElementSibling){
+                num.nextElementSibling.classList.add('in');
+            }
+            else{
                 counter.classList.add('hide');
-                final_message.classList('show');
+                final_message.classList.add('show');
             }
         });
     });
 }
+
+replay.addEventListener('click', ()=>{
+    resetDom();
+    runAnimation();
+});
