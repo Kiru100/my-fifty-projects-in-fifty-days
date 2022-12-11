@@ -32,16 +32,6 @@ h4{
   animation: hide 0.2s ease-out;
 }
 
-@keyframes hide {
-  0%{
-    transform: translate(-50%, -50%) scale(1);
-  }
-
-  100%{
-    transform: translate(-50%, -50%) scale(0);
-  }
-}
-
 .final{
   position: fixed;
   top: 50%;
@@ -53,20 +43,6 @@ h4{
 .final.show{
   transform: translate(-50%, -50%) scale(1);
   animation: show 0.2s ease-out;
-}
-
-@keyframes show {
-  0%{
-    transform: translate(-50%, -50%) scale(0);
-  }
-
-  30%{
-    transform: translate(-50%, -50%) scale(1.4);
-  }
-
-  100%{
-    transform: translate(-50%, -50%) scale(1);
-  }
 }
 
 .nums {
@@ -93,38 +69,6 @@ h4{
 
 .nums span.out{
   animation: outside .5s ease-in-out;
-}
-
-@keyframes inside{
-  0%{
-    transform: translate(-50%, -50%) rotate(120deg);
-  }
-
-  30%{
-    transform: translate(-50%, -50%) rotate(-20deg);
-  }
-
-  60%{
-    transform: translate(-50%, -50%) rotate(10deg);
-  }
-
-  100%{
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-}
-
-@keyframes outside{
-  0%{
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-
-  60%{
-    transform: translate(-50%, -50%) rotate(20deg);
-  }
-
-  100%{
-    transform: translate(-50%, -50%) rotate(-120deg);
-  }
 }
 
 #replay{
@@ -162,4 +106,60 @@ h4{
 #replay:hover span:after{
   opacity: 1;
   right: 0;
+}
+
+@keyframes inside{
+  0%{
+    transform: translate(-50%, -50%) rotate(120deg);
+  }
+
+  30%{
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+
+  60%{
+    transform: translate(-50%, -50%) rotate(10deg);
+  }
+
+  100%{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@keyframes outside{
+  0%{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  60%{
+    transform: translate(-50%, -50%) rotate(20deg);
+  }
+
+  100%{
+    transform: translate(-50%, -50%) rotate(-120deg);
+  }
+}
+
+@keyframes show {
+  0%{
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  30%{
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+
+  100%{
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes hide {
+  0%{
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100%{
+    transform: translate(-50%, -50%) scale(0);
+  }
 }
