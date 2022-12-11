@@ -20,12 +20,12 @@ function runAnimation(){
     nums.forEach((num, index) => {
         const nextToLast = nums.length - 1;
 
-        num.addEventListener('animationend', (e)=>{
-            if(e.animationName === 'inside' && index !== nextToLast){
+        num.addEventListener('animationend', (event)=>{
+            if(event.animationName === 'inside' && index !== nextToLast){
                 num.classList.remove('in');
                 num.classList.add('out');
             }
-            else if(e.animationName === 'outside' && num.nextElementSibling){
+            else if(event.animationName === 'outside' && num.nextElementSibling){
                 num.nextElementSibling.classList.add('in');
             }
             else{
