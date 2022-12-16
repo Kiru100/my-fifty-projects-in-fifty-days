@@ -58,9 +58,7 @@ const createPokemonCard = (pokemon) =>{
             `;
 
         pokemonEl.innerHTML = pokemonInnerHTML;
-
         pokemon_container.appendChild(pokemonEl);
-
 }
 
 fetchPokemon();
