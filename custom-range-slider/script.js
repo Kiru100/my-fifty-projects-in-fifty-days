@@ -15,10 +15,7 @@ range.addEventListener("input", (event)=>{
 
     const left = value * (num_width / max) - num_label_width / 2 + scale(value, min, max, 10, -10);
 
-    console.log(left);
-
-    label.style.left = `${left}px`
-
+    label.style.left = `${left}px`;
     label.innerHTML = value;
 });
 
